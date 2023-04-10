@@ -10,7 +10,7 @@ The string your function returns should be in SCREAMING-KEBAB-CASE, with hypens,
 
 Each argument should be separated from the next by a single hyphen in the output string.
 
-If the arguments are not strings, they should be converted to strings before being concatenated.
+If any of the arguments are not strings, they should be converted to strings before being glued together.
 
 For example:
 
@@ -21,6 +21,6 @@ ToScreamingKebab("NINE", "Te-N", "ELE VEN", 12) should return "NINE-TE-N-ELE-VEN
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-export function ToScreamingKebab(...str) {
+export function toScreamingKebab(...str) {
     // Your code here
   }
