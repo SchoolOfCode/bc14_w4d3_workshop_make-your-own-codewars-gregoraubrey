@@ -43,6 +43,18 @@ test('toScreamingKebab should replace underscores with hyphens', () => {
     expect(toScreamingKebab("Q_R_S_T", )).toBe("Q-R-S-T");
 });
 
+test('toScreamingKebab should replace repeated spaces with a single hyphen', () => {
+    expect(toScreamingKebab("U V  W   X", )).toBe("U-V-W-X");
+});
+
+test('toScreamingKebab should replace repeated underscores with a single hyphen', () => {
+    expect(toScreamingKebab("Y_Z__A___B", )).toBe("Y-Z-A-B");
+});
+
+test('toScreamingKebab should replace repeated hyphens with a single hyphen', () => {
+    expect(toScreamingKebab("C-D--E---F", )).toBe("C-D-E-F");
+});
+
 test('toScreamingKebab should return a string in SCREAMING-KEBAB-CASE', () => {
     expect(toScreamingKebab("one_two tHREe-foUR", 5, true, null, undefined, "last")).toBe("ONE-TWO-THREE-FOUR-5-TRUE-NULL-UNDEFINED-LAST");
 });
