@@ -24,27 +24,6 @@ ToScreamingKebab("Th   ir___TE---EN") should return "TH-IR-TE-EN"
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-// export function toScreamingKebab(...args) {
-//     // Your code here
-//   }
-
-////////// PLAN ///////////
-// make an array out of the arguments
-//      map over the array
-//      for each item in the array, turn it into a string
-// turn each letter in the array into uppercase
-//      use the toUpperCase() method
-// replace all spaces and underscores with hyphens
-//      use the replace() method with a regex of /[_-\s]+/g, "-"
-//      the + means one or more of whitespace, hyphen or underscore in a row
-// join the array into a string with hyphens between each item
-//      use the join() method with a hyphen as the argument
-// return finalString
-
 export function toScreamingKebab(...args) {
-    const array = args.map(arg => String(arg));
-    const uppercaseArray = array.map(item => item.toUpperCase());
-    const hyphenatedUppercaseArray = uppercaseArray.map(item => item.replace(/[_-\s]+/g, "-"));
-    const finalString = hyphenatedUppercaseArray.join("-");
-    return finalString;
-}
+    // Your code here
+  }
